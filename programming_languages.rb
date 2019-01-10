@@ -45,7 +45,7 @@ def reformat_languages(languages)
         reformatted[langs][:style] << "NEW THINGY"
         puts "else: = #{langs[:style]}"
       end
-      puts "Additional: #{reformatted[langs]}"
+#      puts "Additional: #{reformatted[langs]}"
     end
   end
   puts reformatted
