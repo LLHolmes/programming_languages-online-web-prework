@@ -37,7 +37,7 @@ def reformat_languages(languages)
       reformatted[langs] = attributes
 #      puts "Initial: #{reformatted[langs]}"
       if reformatted[langs][:style] == nil
-        puts "adding"
+        puts "#{reformatted[langs][:style].length} adding"
         reformatted[langs][:style] = [style]
       else
         puts "ELSE"
