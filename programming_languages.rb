@@ -37,9 +37,13 @@ def reformat_languages(languages)
       reformatted[langs] = attributes
       puts "Initial: #{reformatted[langs]}"
       if reformatted[langs][:style] == nil
+        puts "#{langs} #{langs[:style]} + #{style}"
         reformatted[langs][:style] = [style]
+        puts "= #{langs[:style]}"
       else
+        puts "else: #{langs} #{langs[:style]} + #{style}"
         reformatted[langs][:style] << "NEW THINGY"
+        puts "else: = #{langs[:style]}"
       end
       puts "Additional: #{reformatted[langs]}"
     end
