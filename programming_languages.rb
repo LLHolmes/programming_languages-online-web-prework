@@ -39,7 +39,7 @@ def reformat_languages(languages)
       if reformatted[langs][:style] == nil
         reformatted[langs][:style] = [style]
       else
-        reformatted[langs][:style] << style
+        reformatted[langs][:style] << "NEW THINGY"
       end
       puts "Additional: #{reformatted[langs]}"
     end
