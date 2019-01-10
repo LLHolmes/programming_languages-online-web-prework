@@ -35,8 +35,7 @@ def reformat_languages(languages)
   languages.each do |style, language_info|
     reformatted[style] = language_info
     language_info.each do |langs, attributes|
-      reformatted[langs] = attributes
-      puts "Initial: #{reformatted[langs]}"
+      puts "Initial: #{reformatted[style]}"
       reformatted[langs][:style] = [style]
       puts "Additional: #{reformatted[langs]}"
     end
