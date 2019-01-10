@@ -43,3 +43,4 @@ def reformat_languages(languages)
   puts reformatted
 end
 
+reformat_languages(languages)
