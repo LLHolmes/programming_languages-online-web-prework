@@ -40,7 +40,8 @@ def reformat_languages(languages)
         reformatted[langs][:style] = [style]
       else
         reformatted[langs][:style] << style
-        puts "Additional: #{reformatted[langs]}"
+      ends
+      puts "Additional: #{reformatted[langs]}"
     end
   end
   puts reformatted
